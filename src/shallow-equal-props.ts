@@ -1,11 +1,8 @@
 /**
  * Return true, if `propsA` is shallow equal to `propsB`.
- * Pass Custom equality function to `customEqual`.
- * Default equality is `Object.is`
  *
  * Options:
  *
- * - `customEqual`: function should return true if the `a` value is equal to `b` value.
  * - `debug`: enable debug info to console log. This log will be disable in production build
  */
 import { shallowEqual, is } from "shallow-equal-object";
