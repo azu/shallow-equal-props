@@ -26,7 +26,7 @@ import { shallowEqualProps } from "shallow-equal-props";
 import * as React from "react";
 class MyComponent extends React.Component {
     shouldComponentUpdate(nextProps){
-        return shallowEqualProps(this.props, nextProps);
+        return !shallowEqualProps(this.props, nextProps);
     }
 }
 ```
