@@ -1,4 +1,4 @@
-# shallow-equal-props
+# shallow-equal-props [![Build Status](https://travis-ci.org/azu/shallow-equal-props.svg?branch=master)](https://travis-ci.org/azu/shallow-equal-props)
 
 Shallow Equal for React's props.
 
