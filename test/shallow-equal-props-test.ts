@@ -51,4 +51,19 @@ describe("shallow-equal-props", () => {
             "elementA is not equal elementB"
         );
     });
+    it("pass customEqual", () => {
+        assert.equal(
+            shallowEqualProps(
+                { a: 1 },
+                { a: 2 },
+                {
+                    customEqual() {
+                        return true;
+                    }
+                }
+            ),
+            true,
+            "should be equal"
+        );
+    });
 });

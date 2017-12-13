@@ -28,8 +28,9 @@ export const shallowEqualProps = (
         console?: Pick<Console, "log" | "group" | "groupEnd">;
     }
 ): boolean => {
+    const customEqual = options && options.customEqual;
     return shallowEqual(propsA, propsB, {
-        customEqual: isEqualProps,
+        customEqual: customEqual || isEqualProps,
         debug: options && options.debug,
         console: options && options.console
     });
