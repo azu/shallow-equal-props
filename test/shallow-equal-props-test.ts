@@ -19,6 +19,9 @@ describe("shallow-equal-props", () => {
             "should be equal"
         );
     });
+    it("should check equality Array", () => {
+        assert.equal(shallowEqualProps([1, 2, 3], [1, 2, 3]), true, "array should be equal");
+    });
     it("should check `type` of React.Element", () => {
         const elementA = React.createElement("div", { key: "a" });
         const elementB = React.createElement("span", { key: "a" });
